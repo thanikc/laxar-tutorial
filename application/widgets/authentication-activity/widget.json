@@ -1,0 +1,43 @@
+{
+   "name": "authentication-activity",
+   "description": "",
+
+   "integration": {
+      "technology": "plain",
+      "type": "activity"
+   },
+
+   "features": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "required": ["authentication"],
+      "properties": {
+        
+        "login": {
+          "type": "object",
+          "required": [ "resource" ],
+          "properties": {
+            "resource": {
+              "type": "string",
+              "format": "topic",
+              "axRole": "inlet",
+              "description": "Name of the data resource with login parameters."
+            }
+          }
+        },
+        "authentication": {
+          "required": [ "resource" ],
+          "type": "object",
+          "properties": {
+            "resource": {
+              "type": "string",
+              "format": "topic",
+              "axRole": "outlet",
+              "description": "The event bus topic under which to publish the authentication data."
+            }
+          }
+        }
+
+      }
+   }
+}

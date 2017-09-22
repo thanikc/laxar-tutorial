@@ -1,0 +1,30 @@
+{
+   "name": "login-widget",
+   "description": "",
+
+   "integration": {
+      "technology": "vue",
+      "type": "widget"
+   },
+
+   "features": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "properties": {
+        
+        "login": {
+          "type": "object",
+          "required": [ "resource" ],
+          "properties": {
+            "resource": {
+              "type": "string",
+              "format": "topic",
+              "axRole": "outlet",
+              "description": "Name of the data resource with login parameters."
+            }
+          }
+        }
+
+      }
+   }
+}

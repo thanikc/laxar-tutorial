@@ -1,0 +1,10 @@
+{
+  "generator-laxarjs2": {
+    "author": "Thanik Cheowtirakul",
+    "homepage": "",
+    "license": "UNLICENSED",
+    "banner": "/**\n * Copyright 2017 Thanik Cheowtirakul\n */",
+    "infrastructure": false,
+    "integrationTechnology": "vue"
+  }
+}
